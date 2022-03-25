@@ -104,8 +104,7 @@ class GPNF_Session {
 	}
 
 	public function get_cookie_name() {
-		// $name = implode( '_', array( self::COOKIE_NAME, $this->_form_id ) );
-		$name = implode( '_', array( self::COOKIE_NAME));
+		$name = implode( '_', array( self::COOKIE_NAME, $this->_form_id ) );
 		/**
 		 * Filter the name of the session cookie GPNF uses for a given form
 		 *
